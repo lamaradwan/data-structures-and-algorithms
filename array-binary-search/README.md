@@ -1,6 +1,6 @@
 # Array Binary Search
 <!-- Description of the challenge -->
-I've take two arguments in the function: list and element, then returned the index of the element if its exist in the list,
+I've took two arguments in the function: list and element, then returned the index of the element if its exist in the list,
 -1 if it's not exist in the list
 
 ## Whiteboard Process
