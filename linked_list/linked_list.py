@@ -43,7 +43,55 @@ class LinkedList:
             print("The list is empty.")
             return "The list is empty."
 
+    def Append(self,data):
+        newNode = Node(data)
+        if self.head == None:
+            self.head = newNode
+            return
+        current = self.head
+        while(current.next != None):
+            current = current.next
+        current.next = newNode
 
+
+    def InsertBefore(self,data,newData):
+        newNode = Node(newData)
+        if self.head == None:
+            self.head = newNode
+            return
+        current = self.head
+        if current.data == data:
+            self.Insert(newData)
+            return
+        while current.next != None:
+            nextNode = current.next
+            if current.next.data == data:
+                current.next = newNode
+                newNode.next = nextNode
+                return
+            current = current.next
+        if current.data != data:
+            raise Exception(f"The Index {data} is not exist in the list")
+
+
+    def InsertAfter(self,data,newData):
+        newNode = Node(newData)
+        if self.head == None:
+            self.head = newNode
+            return
+        current = self.head
+        while current.next != None:
+            nextNode = current.next
+            if current.data == data:
+                current.next = newNode
+                newNode.next = nextNode
+                return
+            current = current.next
+        if current.data == data:
+            self.Append(newData)
+            return
+        if current.data != data:
+            raise Exception(f"The Index {data} is not exist in the list")
 
 
 if __name__ == '__main__':
@@ -51,11 +99,24 @@ if __name__ == '__main__':
     list.Insert(10)
     list.Insert(20)
     list.Insert(30)
+    list.Append(2)
     list.Insert(40)
+    list.Append(5)
+
+    list.InsertAfter(30,8)
+    list.InsertAfter(2,200)
+    # list.InsertAfter(100,500)
+
+    list.InsertBefore(40,9)
+    list.InsertBefore(10,9)
+    # list.InsertBefore(400,9)
+
+
+    # list.Append(2)
 
 
     str(list.ToString())
-    print(list.head.data)
+    # print(list.head.data)
     # print()
     # print(list.Includes(10))
 
