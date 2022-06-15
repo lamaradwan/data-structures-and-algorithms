@@ -20,3 +20,8 @@ The Big O notation is **O(1)** time performance
 4. Append --> add to the last
 5. InsertBefore --> to add any element before a specific element
 6. InsertAfter --> to add any element after a specific element
+
+
+## White Board
+- Linked List Kth
+![My Whiteboard](linked-list-kth.png)
