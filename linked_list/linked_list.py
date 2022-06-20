@@ -124,6 +124,7 @@ class LinkedList:
         return current.data
 
 
+
 if __name__ == '__main__':
     # list = LinkedList()
     # list.Insert(10)
