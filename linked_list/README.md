@@ -21,6 +21,7 @@ The Big O notation is **O(1)** time performance
 5. InsertBefore --> to add any element before a specific element
 6. InsertAfter --> to add any element after a specific element
 7. kthFromEnd --> to search for elements by index from the end of the list
+8. zipLists --> zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the the zipped list.
 
 
 ## White Board
