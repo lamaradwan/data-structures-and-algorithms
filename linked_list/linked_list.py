@@ -125,6 +125,7 @@ class LinkedList:
 
 
 
+
 if __name__ == '__main__':
     # list = LinkedList()
     # list.Insert(10)
@@ -164,11 +165,12 @@ if __name__ == '__main__':
 
 
     testing = LinkedList()
-    testing.Append(10)
-    testing.Append(15)
+    # testing.Append(10)
+    # testing.Append(15)
     # testing.Append(20)
-    testing.Append(25)
-    testing.Append(30)
-    print(testing.kthFromEnd(1))
-    print(math.floor(testing.count/2))
+    # testing.Append(15)
+    # testing.Append(10)
+    # testing.ToString()
+
+
 
