@@ -6,3 +6,5 @@
 - [ Singly Linked List](linked_list/README.md)
 - [ Zip Linked Lists](zip_lists/README.md)
 - [ Stack and Queue ](stack_and_queue/README.md)
+- [ Stack Queue Pseudo ](stack_queue_pseudo/README.md)
+- [Stack Queue Animal Shelter ](stack_queue_animal_shelter/README.md)
