@@ -17,44 +17,20 @@ representing whether or not the brackets in the string are balanced
 """
 
 
-def validate_brackets(text):
-    opening_stack = Stack()
-    op_len = 0
-    closing_stack = Stack()
-    closing_queue = Queue()
-    clo_len = 0
-    text_list = list(text)
-    for i in text:
-        if i == "(" or i == "{" or i == "[":
-            opening_stack.push(i)
-            op_len += 1
-        elif i == ")" or i == "}" or i == "]":
-            # closing_queue.enqueue(i)
-            closing_stack.push(i)
-            clo_len += 1
-
-    # reversed_text = text_list[::-1]
-    # for i in reversed_text:
-    #     if i == ")" or i == "}" or i == "]":
-    #         # closing_stack.push(i)
-    #         closing_queue.enqueue(i)
-    #         clo_len += 1
-
-    # print(opening_stack)
-    # print(closing_stack)
-
-    if op_len == clo_len:
-        for i in range(op_len):
-            # print("while loop")
-            if opening_stack.top.value + closing_stack.top.value == "[]" or opening_stack.top.value + closing_stack.top.value == "()" or opening_stack.top.value + closing_stack.top.value == "{}":
-                # print("comparing the stacks elements")
-                opening_stack.pop()
-                closing_stack.pop()
+def validate_brackets(shape):
+    shapes = ["{}", "[]", "()"]
+    stack = Stack()
+    for bracket in shape:
+        if bracket == "{" or bracket == "(" or bracket == "[":
+            stack.push(bracket)
+        elif bracket == "}" or bracket == ")" or bracket == "]":
+            if stack.top is None:
+                return False
+            elif (stack.top.value + bracket) in shapes:
+                stack.pop()
             else:
                 return False
-        return True
-    else:
-        return False
+    return True if stack.isEmpty() else False
 
 
 if __name__ == "__main__":
