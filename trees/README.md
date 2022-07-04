@@ -10,7 +10,8 @@ many children, but must be connected to exactly one parent, except for the root 
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-O(n) for time and space
+O(1) --> for space
+Log(n) --> for time
 
 ## API
 <!-- Description of each method publicly available in each of your trees -->
