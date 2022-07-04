@@ -10,13 +10,25 @@ many children, but must be connected to exactly one parent, except for the root 
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-O(1) --> for space
+I used the recursion in building all the methods, the Big O for each as the following:
 
-Log(n) --> for time
+##### For pre_order(), in_order() and post_order():
+
+- Time: O(n)
+- Space: O(n)
+##### For add() and contains():
+
+- Time: O(log n)
+- Space: O(1)
 
 ## API
 <!-- Description of each method publicly available in each of your trees -->
-We have 3 classes:
-1. Node -> Initiate the value, right and left
-2. BinaryTree -> pre_order, in_order, and post_order methods
-3. BinarySearchTree -> add and contains methods
+1. BinaryTree class have the following methods:
+
+- pre_order(): returns the nodes in the order: root >> left >> right
+- in_order(): returns the nodes in the order: left >> root >> right
+- post_order(): returns the nodes in the order: left >> right >> root
+2.  BinarySearchTree have the following methods:
+
+- add(): adds a node in the right place in the binary search tree, if less than root the node goes to the left, and if more it goes to the right
+- contains(): returns True if the value found and False if not.
