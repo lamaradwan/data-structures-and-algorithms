@@ -64,6 +64,33 @@ class BinaryTree:
         _walk(self.root)
         return result
 
+    def find_maximum(self):
+        if not self.root:
+            return self.root
+
+        maxi = self.root.value
+        values = []
+        def _walk(root):
+            # max = root.value
+            if root.value > maxi:
+                # return root.value
+                values.append(root.value)
+                # print(root.value)
+            else:
+                if root.left:
+                    _walk(root.left)
+
+                if root.right:
+                    _walk(root.right)
+
+
+        _walk(self.root)
+
+        if len(values) == 0:
+            return self.root.value
+        else:
+            return max(values)
+
 
 class BinarySearchTree(BinaryTree):
 
@@ -113,24 +140,35 @@ class BinarySearchTree(BinaryTree):
 
 
 if __name__ == "__main__":
+    # tree = BinaryTree()
+    # tree.root = Node("A")
+    # tree.root.left = Node("B")
+    # tree.root.right = Node("C")
+    # tree.root.left.left = Node("D")
+    # tree.root.left.right = Node("E")
+    # tree.root.right.left = Node("F")
+
     tree = BinaryTree()
-    tree.root = Node("A")
-    tree.root.left = Node("B")
-    tree.root.right = Node("C")
-    tree.root.left.left = Node("D")
-    tree.root.left.right = Node("E")
-    tree.root.right.left = Node("F")
+    tree.root = Node(20)
+    tree.root.left = Node(23)
+    tree.root.right = Node(10)
+    tree.root.left.left = Node(24)
+    tree.root.left.right = Node(18)
+    tree.root.right.left = Node(100)
+    tree.root.right.right = Node(12)
+
     print("++++++++ pre order +++++++++")
     print(tree.pre_order())
     print("++++++++ in order +++++++++")
     print(tree.in_order())
     print("++++++++ post order +++++++++")
     print(tree.post_order())
+    print(tree.find_maximum())
 
-    bTree = BinarySearchTree()
-    bTree.add(23)
-    bTree.add(8)
-    bTree.add(42)
-    bTree.add(4)
-    print(bTree.pre_order())
-    print(bTree.contains(4))
+    # bTree = BinarySearchTree()
+    # bTree.add(23)
+    # bTree.add(8)
+    # bTree.add(42)
+    # bTree.add(4)
+    # print(bTree.pre_order())
+    # print(bTree.contains(4))
