@@ -145,6 +145,10 @@ class BinarySearchTree(BinaryTree):
 
 
 if __name__ == "__main__":
+<<<<<<< HEAD
+=======
+    pass
+>>>>>>> array-reverse
     # tree = BinaryTree()
     # tree.root = Node("A")
     # tree.root.left = Node("B")
@@ -152,6 +156,7 @@ if __name__ == "__main__":
     # tree.root.left.left = Node("D")
     # tree.root.left.right = Node("E")
     # tree.root.right.left = Node("F")
+<<<<<<< HEAD
 
     tree = BinaryTree()
     tree.root = Node(20)
@@ -170,6 +175,15 @@ if __name__ == "__main__":
     print(tree.post_order())
     print(tree.find_maximum())
 
+=======
+    # print("++++++++ pre order +++++++++")
+    # print(tree.pre_order())
+    # print("++++++++ in order +++++++++")
+    # print(tree.in_order())
+    # print("++++++++ post order +++++++++")
+    # print(tree.post_order())
+    #
+>>>>>>> array-reverse
     # bTree = BinarySearchTree()
     # bTree.add(23)
     # bTree.add(8)
