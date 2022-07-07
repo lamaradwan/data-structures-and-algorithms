@@ -96,6 +96,21 @@ class BinaryTree:
                     max = v
             return max
 
+    def breadth_first(self):
+        if not self.root:
+            return self.root
+        output = []
+        queue = Queue()
+        queue.enqueue(self.root)
+        while not queue.isEmpty():
+            front = queue.dequeue()
+            output.append(front.value)
+            if front.left:
+                queue.enqueue(front.left)
+            if front.right:
+                queue.enqueue(front.right)
+        return output
+
 
 class BinarySearchTree(BinaryTree):
 
@@ -148,6 +163,10 @@ if __name__ == "__main__":
 <<<<<<< HEAD
 =======
     pass
+<<<<<<< HEAD
+>>>>>>> array-reverse
+=======
+>>>>>>> 853252e (update readme for trees)
 >>>>>>> array-reverse
     # tree = BinaryTree()
     # tree.root = Node("A")
@@ -175,6 +194,10 @@ if __name__ == "__main__":
     print(tree.post_order())
     print(tree.find_maximum())
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> array-reverse
 =======
     # print("++++++++ pre order +++++++++")
     # print(tree.pre_order())
@@ -183,6 +206,10 @@ if __name__ == "__main__":
     # print("++++++++ post order +++++++++")
     # print(tree.post_order())
     #
+<<<<<<< HEAD
+>>>>>>> array-reverse
+=======
+>>>>>>> 853252e (update readme for trees)
 >>>>>>> array-reverse
     # bTree = BinarySearchTree()
     # bTree.add(23)
