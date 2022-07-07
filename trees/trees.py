@@ -163,7 +163,11 @@ if __name__ == "__main__":
 <<<<<<< HEAD
 =======
     pass
+<<<<<<< HEAD
+>>>>>>> array-reverse
+=======
 >>>>>>> 853252e (update readme for trees)
+>>>>>>> array-reverse
     # tree = BinaryTree()
     # tree.root = Node("A")
     # tree.root.left = Node("B")
@@ -190,7 +194,10 @@ if __name__ == "__main__":
     print(tree.post_order())
     print(tree.find_maximum())
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> array-reverse
 =======
     # print("++++++++ pre order +++++++++")
     # print(tree.pre_order())
@@ -199,7 +206,11 @@ if __name__ == "__main__":
     # print("++++++++ post order +++++++++")
     # print(tree.post_order())
     #
+<<<<<<< HEAD
+>>>>>>> array-reverse
+=======
 >>>>>>> 853252e (update readme for trees)
+>>>>>>> array-reverse
     # bTree = BinarySearchTree()
     # bTree.add(23)
     # bTree.add(8)

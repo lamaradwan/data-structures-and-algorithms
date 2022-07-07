@@ -11,4 +11,8 @@
 - [Stack Queue Brackets ](stack_queue_brackets/README.md)
 - [ Trees ](trees/README.md)
 - [ Trees - Find Max ](trees_find_max/README.md)
+<<<<<<< HEAD
+- [ Trees - Fizz- Buzz](tree_fizz_buzz/README.md)
+=======
 - [ Trees - Breadth First](trees_breadth_first/README.md)
+>>>>>>> array-reverse
