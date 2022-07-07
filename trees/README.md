@@ -28,9 +28,12 @@ I used the recursion in building all the methods, the Big O for each as the foll
 - pre_order(): returns the nodes in the order: root >> left >> right
 - in_order(): returns the nodes in the order: left >> root >> right
 - post_order(): returns the nodes in the order: left >> right >> root
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 853252e (update readme for trees)
 2.  BinarySearchTree have the following methods:
 
 - add(): adds a node in the right place in the binary search tree, if less than root the node goes to the left, and if more it goes to the right
