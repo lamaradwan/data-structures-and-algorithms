@@ -13,4 +13,4 @@
 - [ Trees - Find Max ](trees_find_max/README.md)
 - [ Trees - Fizz- Buzz](tree_fizz_buzz/README.md)
 - [ Trees - Breadth First](trees_breadth_first/README.md)
-
+- [ Insertion Sort ](insertion_sort/README.md)
