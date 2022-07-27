@@ -14,3 +14,4 @@
 - [ Trees - Fizz- Buzz](tree_fizz_buzz/README.md)
 - [ Trees - Breadth First](trees_breadth_first/README.md)
 - [ Insertion Sort ](insertion_sort/README.md)
+- [ Merge Sort ](merge_sort/README.md)
