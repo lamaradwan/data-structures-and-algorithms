@@ -21,7 +21,7 @@ Output:  List
         arr[i] <-- temp;
 
 
-![Insertion sort tracing](insertion.jpeg)
+![Insertion sort tracing](insertion.png)
 
 ## Efficency
 - Time: O(n^2)
