@@ -15,3 +15,4 @@
 - [ Trees - Breadth First](trees_breadth_first/README.md)
 - [ Insertion Sort ](insertion_sort/README.md)
 - [ Merge Sort ](merge_sort/README.md)
+- [ Quick Sort ](quick_sort/README.md)

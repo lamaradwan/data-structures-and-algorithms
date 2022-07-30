@@ -4,7 +4,6 @@ Sorting a list using a simple merge sort algorithm
 
 Input: List
 
-
 Output:  List
 
 ## Pseudo Code
@@ -44,7 +43,9 @@ ALGORITHM Mergesort(arr)
        set remaining entries in arr to remaining values in left
 
 
-![Merge sort tracing](merge_s.jpeg)
+![Merge sort tracing](merge.png)
+![Merge sort tracing](merge2.png)
+
 
 ## Efficency
 - Time: O(n*log n)
