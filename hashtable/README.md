@@ -31,9 +31,31 @@ Implement a Hashtable Class with the following methods:
 I used the function approach to make the code more efficient and reusable since creating a methods for executing the program and testing
 will be computationally cheaper and will create a much cleaner (readable) code as well.
 
-**The Big O notation is:**
+**The Big O notation for each method:**
+1. set:
+
 - Time: O(1)
-- Space: O(n)
+- Space: O(n) 
+
+2. get:
+
+- Time: O(n)
+- Space: O(n) 
+
+3. contains:
+
+- Time: O(n)
+- Space: O(n) 
+
+4. keys:
+
+- Time: O(1)
+- Space: O(1)
+
+5. hash:
+
+- Time: O(1)
+- Space: O(1)
 
 ## API
 <!-- Description of each method publicly available in each of your hashtable -->

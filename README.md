@@ -17,3 +17,4 @@
 - [ Merge Sort ](merge_sort/README.md)
 - [ Quick Sort ](quick_sort/README.md)
 - [ Hash Tables](hashtable/README.md)
+- [ Hashmap Repeated Word ](hashmap_repeated_word/README.md)
