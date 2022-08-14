@@ -65,4 +65,3 @@ def test_all_hashtable_intersection():
                 ['guide', 'usher', 'follow'],
                 ['wrath', 'anger', 'delight']]
     assert actual == expected
-    
