@@ -29,7 +29,7 @@ class HashTable:
 
 
     def set(self, key, value):
-        hashed_key = self.__hash(key)
+        hashed_key = self.hashing(key)
         if self.buckets[hashed_key] == None:
             hash_list = LinkedList()
             self.buckets[hashed_key] = hash_list
@@ -71,7 +71,7 @@ class HashTable:
         """
         this method will return a collections of all the keys in hashmap as an object
         """
-        return self.__keys
+        return self.keys
 
 
 if __name__ == '__main__':

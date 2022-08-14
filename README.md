@@ -18,3 +18,4 @@
 - [ Quick Sort ](quick_sort/README.md)
 - [ Hash Tables](hashtable/README.md)
 - [ Hashmap Repeated Word ](hashmap_repeated_word/README.md)
+- [ Hashmap Tree Intersection ](tree_intersection/REDAME.md)
