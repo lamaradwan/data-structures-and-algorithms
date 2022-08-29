@@ -21,5 +21,6 @@
 - [ Hashmap Tree Intersection ](tree_intersection/REDAME.md)
 - [ Hashmap Left Join ](hashmap_left_join/README.md)
 - [ Graphs ](graph/README.md)
-- [Graph Breadth First](graph_breadth_first/README.md)
+- [ Graph Breadth First ](graph_breadth_first/README.md)
 - [ Graph Business Trip ](graph_business_trip/README.md)
+- [ Graph Depth First ](graph_depth_first/README.md)
